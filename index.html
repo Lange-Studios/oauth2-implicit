@@ -4,10 +4,15 @@
     <meta http-equiv="Expires" content="0" />
 </head>
 
+<body>
+    <p>
+        Redirecting back your application...
+    </p>
+</body>
+
 <script>
     var params = new URLSearchParams(window.location.href)
     var state = params.get("state")
     var hashArgs = window.location.hash.substring(1)
     window.location.replace(`http://127.0.0.1:${state}?${hashArgs}`);
-    // window.location.replace(`${redirect_redirect_uri}#${window.location.hash}`);
 </script>
