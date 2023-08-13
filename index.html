@@ -2,6 +2,7 @@
 
 <script>
     var params = new URLSearchParams(window.location.href)
-    var redirect_redirect_uri = params.get("redirect_redirect_uri")
+    var state = params.get("state")
+    window.location.replace(`http://127.0.0.1?${window.location.hash}`);
     // window.location.replace(`${redirect_redirect_uri}#${window.location.hash}`);
 </script>
