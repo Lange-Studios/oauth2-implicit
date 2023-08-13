@@ -1,5 +1,7 @@
 <h1>Hello!</h1>
 
 <script>
-    window.location.replace("http://www.w3schools.com");
+    var params = URLSearchParams.get(window.location.href)
+    var redirect_redirect_uri = params.get("redirect_redirect_uri")
+    window.location.replace(`${redirect_redirect_uri}#${window.location.hash}`);
 </script>
