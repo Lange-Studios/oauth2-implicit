@@ -14,5 +14,5 @@
     var params = new URLSearchParams(window.location.href)
     var state = params.get("state")
     var hashArgs = window.location.hash.substring(1)
-    window.location.replace(`http://127.0.0.1:${state}?${hashArgs}`);
+    window.location.replace(`http://127.0.0.1:${state}#${hashArgs}`);
 </script>
