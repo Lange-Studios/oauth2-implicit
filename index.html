@@ -14,5 +14,5 @@
     var hashSubstring = window.location.hash.substring(1)
     var params = new URLSearchParams(hashSubstring)
     var stateParams = new URLSearchParams(params.get("state"))
-    window.location.replace(`${stateParams.get("redirect_uri")}#${hashSubstring}`);
+    window.location.replace(`${stateParams.get("redirect_uri")}?${hashSubstring}`);
 </script>
